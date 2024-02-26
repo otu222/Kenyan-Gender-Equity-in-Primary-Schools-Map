@@ -1,0 +1,90 @@
+/* custom CSS rules */
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+h1 {
+  color: orange;
+  font-weight: 700;
+}
+
+#map {
+  height: 75vh;
+  border-top: 2px solid orange;
+}
+
+.boys {
+  background-color: #6e77b0;
+}
+
+.girls {
+  background-color: #d96d02;
+}
+
+.leaflet-legend {
+  width: 240px;
+  height: 180px;
+  background-color: darkgray;
+  display: none;
+}
+
+.show-legend {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.legend-large,
+.legend-small {
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+hr.small,
+hr.large {
+  width: 83px;
+  position: absolute;
+  top: -8px;
+  left: 55px;
+  border: 1px dashed #ccc;
+  margin-top: 8px;
+}
+
+.leaflet-container {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+}
+
+#info {
+  z-index: 1000;
+  display: none;
+  width: 260px;
+  position: absolute;
+  /* top: 10px;
+    right: 10px; */
+}
+
+.girls,
+.boys,
+.trend {
+  color: #fff;
+  font-weight: 700;
+  padding: 0 4px 0 4px;
+}
+
+@media screen and (min-width: 768px) {
+  #map {
+    border-top: none;
+  }
+  .leaflet-legend {
+    display: block;
+  }
+  #legend button {
+    display: none;
+  }
+}
